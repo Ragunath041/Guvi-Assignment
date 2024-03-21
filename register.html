@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css/register.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration</h1>
+        <form id="registerForm"> <!-- Form without action attribute -->
+            <div>
+                <input type="text" id="username" name="username" placeholder="Full Name" required><br>
+            </div>
+
+            <div>
+                <input type="email" id="email" name="email" placeholder="Email" required><br>
+            </div>
+
+            <div>
+                <input type="password" id="password" placeholder="Password" name="password" required>
+                <div id="password-strength"></div>
+            </div>
+
+            <div>
+                <input type="password" placeholder="Confirm Password" name="confirm-password" required><br>
+            </div>
+            
+            <div>
+                <a href="login.html"><h6>Already Have An Account</h6></a>
+            </div>
+            <button type="submit" id="registerBtn">Register</button> <!-- Changed type to submit -->
+        </form> <!-- Form ends here -->
+    </div>
+    <script src="js/register.js" defer></script>
+</body>
+</html>
